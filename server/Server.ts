@@ -83,7 +83,7 @@ app.use(express.urlencoded({ extended: false }));
 
 // Check Backend Working Or Not and Welcome Message And Bearer Token For API
 app.get("/", (req, res) => {
-    res.send(`<h1>Welcome To Pacific Rim 🤖🌊</h1>`);
+    res.send(`<h1>Welcome To Pacific Rim</h1>`);
 });
 
 // Mount the router
