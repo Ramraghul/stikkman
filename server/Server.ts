@@ -2,7 +2,7 @@
 import express, { Request, Response, NextFunction } from 'express';
 import logger from 'morgan';
 import chalk from 'chalk';
-// import Route from './src/routers/route';
+import Route from './src/routers/route';
 import cors from 'cors';
 import compression from 'compression';
 import helmet from 'helmet';
@@ -87,7 +87,7 @@ app.get("/", (req, res) => {
 });
 
 // Mount the router
-// app.use('/api/v1', Route);
+app.use('/api/v1', Route);
 
 
 // Start the server
