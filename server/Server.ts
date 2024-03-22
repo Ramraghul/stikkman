@@ -9,7 +9,7 @@ import helmet from 'helmet';
 import dotenv from 'dotenv';
 
 dotenv.config();
-// require('./src/database/connection')
+require('./src/database/connection')
 
 const app = express();
 
