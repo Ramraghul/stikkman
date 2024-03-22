@@ -1,4 +1,4 @@
-import { Sequelize as SequelizeConstructor } from "sequelize";
+import { Sequelize } from "sequelize";
 import chalk from 'chalk';
 import dotenv from 'dotenv';
 dotenv.config();
@@ -20,7 +20,7 @@ if (!host || !database || !username || !password) {
 const databaseUrl = `mysql://${username}:${password}@${host}:${port}/${database}`;
 
 // DataBase Connection With MySql Server;
-const sequelize = new SequelizeConstructor(databaseUrl, {
+const sequelize = new Sequelize(databaseUrl, {
     dialect:'mysql',
     logging: false,
     timezone: '+05:30'
