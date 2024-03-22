@@ -21,6 +21,7 @@ const databaseUrl = `mysql://${username}:${password}@${host}:${port}/${database}
 
 // DataBase Connection With MySql Server;
 const sequelize = new SequelizeConstructor(databaseUrl, {
+    dialect:'mysql',
     logging: false,
     timezone: '+05:30'
 });
